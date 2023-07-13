@@ -1,1 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="top">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-3" href="index.html"><img src="img/logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sales.html">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="certificates.html">Подарочные сертификаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Для покупателя</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="contacts.html">Наша аптечная сеть</a></li>
+                                    <li><a class="dropdown-item" href="#">Новости</a></li>
+                                    <li><a class="dropdown-item" href="#">Для покупателя</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row top-number align-items-center">
+                        <div class="row">
+                            <div class="col phone-number">
+                                <i class="fa-solid fa-phone fa-2x"></i>
+                                <span>169</span>
+                            </div>
+                            <div class="col call"><a class="nav-link" href="" role="button">Заказать звонок</a></div>
+
+                            <div class="col top-icons justify-content-end align-items-center">
+                                <a type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        class="bi bi-person" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                    </svg>
+                                </a>
+                                <a type="button" class="btn btn-primary btn-like" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                    </svg>
+                                </a>
+                                <a type="button" class="btn btn-primary btn-cart" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        class="bi bi-cart2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                    </svg> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="sticky-top">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid container">
+                <span class="catalog">
+                    <a href="catalog.html">
+                        <img src="img/list.svg">
+                        <a href="catalog.html" class="navbar-brand">Каталог</a></a>
+                </span>
+                <form class="d-flex w-50">
+                    <input class="form-control me-2" type="search" aria-label="Search">
+                    <button class="btn btn-outline-success btn-search" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+                <div class="row nav-icons justify-content-center">
+                    <div class="col-3  text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                        <a type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                    <div class="col-4  text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-suit-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                        </svg>
+                        <a type="button" class="btn btn-primary btn-like" href="">
+                            <span>Избранное</span>
+                        </a>
+                    </div>
+                    <div class="col-3  text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                        <a type="button" class="btn btn-primary btn-cart" href="">
+                            <span>Корзина</span> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="eye-btn">
+        <div class="eye-btn-block"></div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <div class="decor-img"></div>
+            <div class="decor-img"></div>
+            <div class="decor-img"></div>
+            <div class="decor-img-promo"></div>
+            <div class="row  align-items-center justify-content-end banner-info">
+                <div class="col-6 banner-text">
+                    <h1>Бережем <br> ваше здоровье</h1>
+                    <p>Оформите заказ через сайт и заберите в нашей ближайшей аптеке</p>
+                    <a class="button" href="#">Интернет-заказ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <h2>Найдите идеальное решение для вашего здоровья!</h2>
+                </div>
+            </div>
+            <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/nervous-system.png" alt="">
+                                <span>Нервная система</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/vitamins.png" alt="">
+                                <span>Витамины и иммуностимуляторы</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/antihistamines.png" alt="">
+                                <span>Антигистаминные препараты</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/cosmetics.png" alt="">
+                                <span>Косметика</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/hygiene.png" alt="">
+                                <span>Гигиена</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/nervous-system.png" alt="">
+                                <span>Нервная система</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/vitamins.png" alt="">
+                                <span>Витамины и иммуностимуляторы</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/antihistamines.png" alt="">
+                                <span>Антигистаминные препараты</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/cosmetics.png" alt="">
+                                <span>Косметика</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/hygiene.png" alt="">
+                                <span>Гигиена</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/nervous-system.png" alt="">
+                                <span>Нервная система</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/vitamins.png" alt="">
+                                <span>Витамины и иммуностимуляторы</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/antihistamines.png" alt="">
+                                <span>Антигистаминные препараты</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/cosmetics.png" alt="">
+                                <span>Косметика</span>
+                            </div>
+                            <div class="col">
+                                <img src="img/hygiene.png" alt="">
+                                <span>Гигиена</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="promotions">
+        <div class="decor-img"></div>
+        <div class="decor-img"></div>
+        <div class="decor-img"></div>
+        <div class="decor-img-promo"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5">Акции...</h2>
+                </div>
+            </div>
+            <div class="row promotions-body">
+                <div id="carousel-promotions" class="carousel slide col-6" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-promotions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-promotions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-promotions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Новые скидки в наших аптеках</h3>
+                                    <p>С 1 июня 2023 года в аптеках РУП «БЕЛФАРМАЦИЯ» всем покупателям предоставляется
+                                        скидка в размере до 10% с розничной цены при покупке следующих лекарственных
+                                        средств...</p>
+                                    <a class="button" href="#">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Lorem ipsum dolor...</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A earum autem nihil
+                                        labore
+                                        est dolorem, quibusdam beatae iusto unde, sed ipsam ad! Voluptas, quos neque.
+                                        Reprehenderit laudantium est et eligendi.</p>
+                                    <a class="button" href="#">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Lorem ipsum dolor...</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A earum autem nihil
+                                        labore
+                                        est dolorem, quibusdam beatae iusto unde, sed ipsam ad! Voluptas, quos neque.
+                                        Reprehenderit laudantium est et eligendi.</p>
+                                    <a class="button" href="#">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="delimiter">
+        <div class="decor-img"></div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5">Почему выбирают нас?</h2>
+                </div>
+            </div>
+            <div class="row text-center  about-items justify-content-center">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/delivery.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Быстрая доставка</h5>
+                    <p>Мы ценим ваше время и гарантируем вам оперативную доставку</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/cost.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Доступные цены</h5>
+                    <p>Здоровье доступно каждому У нас вы найдете лучшие цены на лекарства</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/gift-card.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Подарочные сертификаты</h5>
+                    <p>Подарите здоровье своим близким! Это станет идеальным выбором для особенных случаев</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/product.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Широкий ассортимент</h5>
+                    <p>Наш широкий ассортимент поможет удовлетворить все ваши потребности</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/quality.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Гарантия качества</h5>
+                    <p>Весь наш товар сертифицирован, чтобы обеспечить вам высокое качество и надежность</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/clients.png" alt="" class="rounded mx-auto d-block">
+                    <h5 class="text-center">Клиентский сервис</h5>
+                    <p>Наша команда готова оказать вам непревзойденное внимание и поддержку</p>
+                </div>
+            </div>
+        </div>
+        <div class="scrollup">
+            <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                </svg></a>
+        </div>
+    </section>
+
+    <section class="history">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="text-center mb-5">Вы смотрели</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                        <img src="img/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Анальгин р-р для инъекций 500мг/мл...</h6>
+                            <small class="text-muted">7.86 руб./шт</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                        <img src="img/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка...</h6>
+                            <small class="text-muted">3.20 руб./шт</small>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Вход в личный кабинет</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Войти</button>
+                    <button type="button" class="btn btn-secondary">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="decor-img"></div>
+        <div class="subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <h5>Подпишитесь на новости и акции</h5>
+                    </div>
+                    <div class="col">
+                        <form>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                                <button class="btn btn-primary" type="button">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col footer-number">
+                        <img src="img/phone.png" alt="phone-icon">
+                        <span>169</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="container">
+                <div class="row align-items-center links-items">
+                    <div class="col"><a href="https://president.gov.by/ru" class="rounded mx-auto d-block"><img
+                                src="img/link-1.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.103.by/" class="rounded mx-auto d-block"><img
+                                src="img/link-2.png" alt=""></a></div>
+                    <div class="col"><a href="http://www.mir.pravo.by/" class="rounded mx-auto d-block"><img
+                                src="img/link-3.png" alt=""></a></div>
+                    <div class="col"><a href="https://minzdrav.gov.by/" class="rounded mx-auto d-block"><img
+                                src="img/link-4.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.tabletka.by/" class="rounded mx-auto d-block"><img
+                                src="img/link-5.png" alt=""></a></div>
+                    <div class="col"><a href="https://24health.by/" class="rounded mx-auto d-block"><img
+                                src="img/link-6.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="resources">
+            <div class="container">
+                <div class="row">
+                    <div class="col resources-links resource-item1">
+                        <h4 class="text-center">Каталог ресурсов</h4>
+                        <ul>
+                            <li><a href="https://president.gov.by/ru">Сайт президента Републики Беларусь</a></li>
+                            <li><a href="https://minzdrav.gov.by/ru/">Сайт министерства здравоохранения Республики
+                                    Беларусь</a></li>
+                            <li><a href="https://www.tabletka.by/">Поиск лекарств на tabletka.by</a></li>
+                            <li><a href="https://www.103.by/">Медицинский портал 103.by</a></li>
+                            <li><a href="https://pharmacia.by/museum/">Виртуальный музей истории аптеки</a></li>
+                            <li><a href="http://xn----7sbgfh2alwzdhpc0c.xn--90ais/login?redirect=%2FRatingPortal">Портал
+                                    рейтинговой оценки организаций Республики Беларусь</a></li>
+                        </ul>
+                    </div>
+                    <div class="col text-center resource-item2">
+                        <h4>Личный кабинет</h4>
+                        <div class="line"></div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="col resource-item3">
+                        <h4 class="text-center">Контакты</h4>
+                        <div class="data">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <p>Приемная: +375 (212) 48 04 04</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <p>Справочная аптек: 169 и <br>
+                                    единый мобильный 65 05 169</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                                <p>E-mail: <a href="mailto:info@pharmacia.by" id="Email">info@pharmacia.by</a></p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                </svg>
+                                <p>Понедельник - Пятница: 8:00 - 17:00</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                <a
+                                    href="https://yandex.by/maps/org/farmatsiya/198715680958/?ll=30.211443%2C55.214844&z=21">
+                                    <p>210016, Республика Беларусь, <br>
+                                        г.Витебск, Великолукский тракт, 63</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row resources-bottom text-center">
+                            <span> Витебское РУП "Фармация" 2000 - 2018.</span>
+                            <span>© Все права защищены.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="payment-methods">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/payment-methods.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agreements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p>Политика обработки персональных данных</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Договор публичной оферты</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Политика обработки файлов cookie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6d9bfec3d1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
