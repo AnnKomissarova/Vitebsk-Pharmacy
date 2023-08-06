@@ -23,3 +23,4 @@ productCards.forEach((cards) => {
     cards.classList.add("row-cols-md-1");
   });
 });
+
