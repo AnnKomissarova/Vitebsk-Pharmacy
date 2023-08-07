@@ -1437,17 +1437,22 @@ iframe {
 .card-quantity .quantity-price {
   position: absolute;
   top: 120px;
-  left: 110px;
+  left: 115px;
   font-size: 0.75rem;
   color: #B8B8B8;
 }
 
 .basket-items #product-cards .card img {
   width: 150px;
+  height: 150px;
 }
 
 .basket-items #product-cards h5 {
   font-size: 1rem;
+}
+
+.basket-items #product-cards .card-body  {
+  padding: 10px;
 }
 
 .basket-items #product-cards .card-body p {
@@ -1473,13 +1478,18 @@ iframe {
   position: relative;
   width: 17px;
   top: 20px;
+  left: 40px;
 }
 
-.basket-items #product-cards .card-icon {
+.basket-items #product-cards .card-icon{
   color: #B8B8B8;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.basket-items #product-cards .card-icon svg{  
+  cursor: pointer;
 }
 
 .basket-items #product-cards .card-price {
@@ -1511,4 +1521,93 @@ iframe {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.basket-items .payment {
+  box-shadow: 1px 1px 6px 2px rgba(90, 90, 90, 0.2);
+  width: 420px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.basket-items .clean-basket {
+  background-color: rgba(228, 46, 46, 0.05);
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid rgba(228, 46, 46, 0.25);
+  margin-top: 20px;
+}
+
+.basket-items .clean-basket:hover {
+  background-color: rgba(228, 46, 46, 0.15);
+}
+
+.promo-field input, .promo-field button {
+  border-color: #D5D5D5;
+}
+
+.promo-field .form-control {
+  border-radius: 10px 0 0 10px;
+  border-width: 1px 0 1px 1px;
+  color: #ACACAC;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 47px;
+}
+
+.promo-field button {
+  border-radius: 0px 10px 10px 0;
+  background-color: #F5F5F5;
+  color: #D5D5D5;
+}
+
+.promo-field .btn:hover {
+  border: 1px solid #D5D5D5; 
+  background-color: #F5F5F5;
+  color: black;
+}
+
+.payment .btn-primary {
+  width: 100%;
+  background-color: #39B54A; 
+  border-radius: 10px;
+  border-width: 0;
+  font-size: 1.25rem;
+  height: 47px;
+  margin: 25px 0;
+}
+
+.payment #promoHelp {
+  font-size: 0.875rem;
+  color: #A2A2A2;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.payment .form-payment-methods  {
+  width: 200px;
+  height: 20px;
+  display: flex;
+}
+
+.payment .payment-header h3{
+  font-size: 1.5rem;
+  color: #6DBF67;
+}
+
+.payment .payment-header .delimiter {
+  width: 100%;
+  height: 1px;
+  background: rgba(90, 90, 90, 0.25);
+  margin: 20px 0;
+}
+
+.chapter-body .payment .payment-header span {
+  height: 30px;
+}
+
+.payment .payment-header .total {
+  margin-bottom: 25px;
 }
