@@ -1150,14 +1150,14 @@ iframe {
 /* Catalog-page */
 
 .catalog-items {
-  padding: 0 0 40px 0;
+  padding: 40px 0;
 }
 
 .icons-items p {
   font-size: 0.875rem;
   font-weight: 300;
   color: #5A5A5A;
-  padding-left: 35px;
+  padding-left: 15px;
   margin: 0;
   line-height: 1;
 }
@@ -1166,55 +1166,14 @@ iframe {
   width: 20%;
 }
 
-.icons-items div::before {
-  content: " ";
+.icons-items div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.icons-items div img {  
   width: 30px;
   height: 30px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  position: relative;
-  left: 0;
-  top: 30px;
-}
-
-.icons-items div:first-child::before {
-  background-image: url(../icons/cosmetics.png);
-}
-
-.icons-items div:nth-child(2)::before {
-  background-image: url(../icons/oil.png);
-}
-
-.icons-items div:nth-child(3)::before {
-  background-image: url(../icons/make-up.png);
-}
-
-.icons-items div:nth-child(4)::before {
-  background-image: url(../icons/facial-treatment.png);
-}
-
-.icons-items div:nth-child(5)::before {
-  background-image: url(../icons/eye-care.png);
-}
-
-.icons-items div:nth-child(6)::before {
-  background-image: url(../icons/hair.png);
-}
-
-.icons-items div:nth-child(7)::before {
-  background-image: url(../icons/lipstick.png);
-}
-
-.icons-items div:nth-child(8)::before {
-  background-image: url(../icons/legs.png);
-}
-
-.icons-items div:nth-child(9)::before {
-  background-image: url(../icons/hand-cream.png);
-}
-
-.icons-items div:nth-child(10)::before {
-  background-image: url(../icons/cosmetics.png);
 }
 
 .search-params .price-item label,
@@ -1253,12 +1212,8 @@ iframe {
   padding: 10px;
 }
 
-.search-params {
-  margin-top: 40px;
-}
-
 .search-params .sort-item {
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .search-params .toggle-btns {
@@ -1270,6 +1225,10 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chapter-body .search-params .col {
+  margin-bottom: 40px;
 }
 
 .chapter-body .search-params .toggle-btns span {
@@ -1610,4 +1569,9 @@ iframe {
 
 .payment .payment-header .total {
   margin-bottom: 25px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #5A5A5A;
 }
