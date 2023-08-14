@@ -1549,12 +1549,6 @@ iframe {
   margin-left: 5px;
 }
 
-.payment .form-payment-methods {
-  width: 200px;
-  height: 20px;
-  display: flex;
-}
-
 .payment .payment-header h3 {
   font-size: 1.5rem;
   color: #6DBF67;
@@ -1752,6 +1746,11 @@ iframe {
   border-radius: 5px 0 0 5px;
 }
 
+.product-sort .form-payment-methods img{
+  height: 15px;
+  width: 217px;
+}
+
 .product-reviews {
   margin-top: 15px;
 }
@@ -1772,13 +1771,13 @@ iframe {
   margin-bottom: 10px;
 }
 
-.order-steps span{
+.order-steps span {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.order-steps span:nth-child(2){
+.order-steps span:nth-child(2) {
   margin: 0 50px 0px 33px;
 }
 
@@ -1809,11 +1808,11 @@ iframe {
   margin: 10px 0;
 }
 
-.order-form form{
+.order-form form {
   color: rgba(162, 162, 162, 1);
 }
 
-.order-form form ::placeholder { 
+.order-form form ::placeholder {
   color: rgba(172, 172, 172, 1);
 }
 
