@@ -84,6 +84,7 @@ header,
 .sticky-top .me-2 {
   margin-right: 0 !important;
   border-radius: 10px 0 0 10px;
+  border-right: 0;
 }
 
 .sticky-top .btn-search {
@@ -1576,4 +1577,118 @@ iframe {
 .breadcrumb a {
   text-decoration: none;
   color: #5A5A5A;
+}
+
+/* Product-page */
+
+.product-items .product-img div:first-of-type {
+  width: 488px;
+  height: 488px;
+  box-shadow: 0px 2px 7px 1px rgba(162, 162, 162, 0.25);
+  border: 1px solid #E4F0F9;
+  border-radius: 20px;
+}
+
+.product-items .product-img img {
+  width: 100%;
+}
+
+.product-items .product-img span, .product-items .product-characteristics span {
+  font-size: 0.75rem;
+  color: rgba(90, 90, 90, 0.5);
+  margin-left: 5px;
+}
+
+.product-items .product-characteristics h3 {
+  margin-bottom: 20px;
+}
+
+.product-items .product-characteristics ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.product-items .product-characteristics ul li {
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.product-items .product-characteristics .all-characteristics {
+  width: 270px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #78B6E3;
+  color: #78B6E3;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.product-items .product-characteristics .all-characteristics:hover {
+  color: #FFFFFF;
+  background: #78B6E3;
+}
+
+.product-items .product-characteristics .btn svg {
+  margin-right: 7px;
+  vertical-align: text-top;
+}
+
+.product-items .product-characteristics .product-price {
+  width: 655px;
+  height: 180px;
+  box-shadow: 0px 2px 7px 1px rgba(162, 162, 162, 1);
+  border-radius: 20px;
+  margin-top: 45px;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.product-items .product-characteristics .product-price .new-price {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #000;
+  margin-right: 20px;
+}
+
+.product-items .product-characteristics .product-price .old-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.product-items .product-characteristics .product-price .discount {
+  font-size: 1.25rem;
+  position: absolute;
+  display: block;
+  width: 71px;
+  height: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background: rgba(109, 191, 103, 0.75);
+  border-radius: 5px;
+  text-align: center;
+  top: 20px;
+  right: 30px;
+}
+
+.product-items .product-characteristics .product-price .price {
+  width: 100%;
+  color: #FFFFFF;
+  background: #6DBF67;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  margin-top: 25px;
+}
+
+
+.form-select {
+  width: 220px;
+  border-left: 0;
+  border-radius: 0;
+  padding-right: 5px;
+}
+
+.form-select:focus, .form-control:focus  {
+  border-color: #ced4da;
 }
