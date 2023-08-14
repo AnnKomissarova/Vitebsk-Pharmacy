@@ -258,8 +258,14 @@
                     </div>
                     <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                         <div class="row">
-                            <div class="col-8 reviews-block"></div>
-                            <div class="col-4 add-review"></div>
+                            <div class="col-8 reviews-block">
+                                <p>Помогите другим пользователям с выбором - будьте первым, кто поделится своим мнением
+                                    об этом товаре</p>
+                            </div>
+                            <div class="col-3 add-review">
+                                <h3>Нет отзывов о товаре</h3>
+                                <button type="button" class="btn add-review-btn">Добавить отзыв</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="payment-tab">5</div>
@@ -268,16 +274,91 @@
             </div>
             <div class="row product-sort">
                 <h3>Наличие и цены</h3>
-                <select class="form-select">                    
+                <select class="form-select">
                     <option selected>Сначала дешевые</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-                  </select>
-                <form class="d-flex w-50">                    
-                    <input class="form-control" type="search" aria-label="Search"  placeholder="Введите адрес">                    
-                    <button class="btn btn-search" type="submit"><i
-                            class="fas fa-search"></i></button>
+                </select>
+                <form class="d-flex w-50">
+                    <input class="form-control" type="search" aria-label="Search" placeholder="Введите адрес">
+                    <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
                 </form>
+
+                <div class="product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Способ доставки</th>
+                                <th scope="col">Срок годности</th>
+                                <th scope="col">Наличие</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Доставка курьером</th>
+                                <td>До: 2025-06-01</td>
+                                <td class="available">1 шт</td>
+                                <td>31 BYN</td>
+                                <td><button type="button" class="btn add-in-basket">В корзину</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Самовывоз - №3
+                                    <div> Адрес аптеки: ул.Ташкентская,16/1-3Н</div>
+                                    <div>Режим работы: 8-21 пер.21-21.15 Круглосуточно с/д 1 среда 8-12,
+                                        Сб.9-21, Вс.9-21</div>
+                                    <div>Телефон: 373-69-93</div>
+                                </th>
+                                <td>До: 2025-06-01</td>
+                                <td class="available">Есть в наличии</td>
+                                <td>31 BYN</td>
+                                <td><button type="button" class="btn add-in-basket">В корзину</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Самовывоз - №3
+                                    <div> Адрес аптеки: ул.Ташкентская,16/1-3Н</div>
+                                    <div>Режим работы: 8-21 пер.21-21.15 Круглосуточно с/д 1 среда 8-12,
+                                        Сб.9-21, Вс.9-21</div>
+                                    <div>Телефон: 373-69-93</div>
+                                </th>
+                                <td>До: 2025-06-01</td>
+                                <td class="available">Есть в наличии</td>
+                                <td>31 BYN</td>
+                                <td><button type="button" class="btn add-in-basket">В корзину</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Самовывоз - №3
+                                    <div> Адрес аптеки: ул.Ташкентская,16/1-3Н</div>
+                                    <div>Режим работы: 8-21 пер.21-21.15 Круглосуточно с/д 1 среда 8-12,
+                                        Сб.9-21, Вс.9-21</div>
+                                    <div>Телефон: 373-69-93</div>
+                                </th>
+                                <td>До: 2025-06-01</td>
+                                <td class="available">Есть в наличии</td>
+                                <td>31 BYN</td>
+                                <td><button type="button" class="btn add-in-basket">В корзину</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Самовывоз - №3
+                                    <div> Адрес аптеки: ул.Ташкентская,16/1-3Н</div>
+                                    <div>Режим работы: 8-21 пер.21-21.15 Круглосуточно с/д 1 среда 8-12,
+                                        Сб.9-21, Вс.9-21</div>
+                                    <div>Телефон: 373-69-93</div>
+                                </th>
+                                <td>До: 2025-06-01</td>
+                                <td class="available">Есть в наличии</td>
+                                <td>31 BYN</td>
+                                <td><button type="button" class="btn add-in-basket">В корзину</button></td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+                <a type="button" class="btn" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>Назад к списку</a>
             </div>
 
         </div>
