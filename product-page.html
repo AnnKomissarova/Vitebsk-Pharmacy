@@ -98,7 +98,7 @@
                     <select class="form-select">
                         <option selected>По названию</option>
                         <option value="1">По МНН</option>
-                      </select>
+                    </select>
                     <button class="btn btn-outline-success btn-search" type="submit"><i
                             class="fas fa-search"></i></button>
                 </form>
@@ -151,7 +151,7 @@
                 </ol>
             </nav>
             <h2>Отодекса ушные капли 10,5мл флакон №1</h2>
-            <div class="col d-flex justify-content-center align-items-center">
+            <div class="col d-flex justify-content-center align-items-center product-reviews">
                 <div class="rating">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-star" viewBox="0 0 16 16">
@@ -160,7 +160,7 @@
                     </svg>
                     <span>0</span>
                 </div>
-                <span>Нет отзывов</span>
+                <span class="reviews">Нет отзывов</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-share-fill" viewBox="0 0 16 16">
                     <path
@@ -201,11 +201,76 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>Посмотреть все характеристики</button>
                     <div class="product-price">
-                        <span class="new-price">От 10.02 BYN</span><span class="old-price">12.05 BYN</span><span class="discount">-17 %</span>
-                        <button type="button" class="btn price">Наличие и цены</button>                        
+                        <span class="new-price">От 10.02 BYN</span><span class="old-price">12.05 BYN</span><span
+                            class="discount">-17 %</span>
+                        <button type="button" class="btn price">Наличие и цены</button>
                     </div>
-                    <span>Цена действительна только для интернет-магазина и может отличаться от цен в других аптеках</span>
+                    <span>Цена действительна только для интернет-магазина и может отличаться от цен в других
+                        аптеках</span>
                 </div>
+            </div>
+            <div class="row product-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                            aria-selected="true">Описание</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="characteristics-tab" data-bs-toggle="tab"
+                            data-bs-target="#characteristics" type="button" role="tab" aria-controls="characteristics"
+                            aria-selected="false">Характеристики</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="instruction-tab" data-bs-toggle="tab" data-bs-target="#instruction"
+                            type="button" role="tab" aria-controls="instruction" aria-selected="false">Инструкция по
+                            применению</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab" aria-controls="reviews" aria-selected="false">Отзывы</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment"
+                            type="button" role="tab" aria-controls="payment" aria-selected="false">Оплата</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery"
+                            type="button" role="tab" aria-controls="delivery" aria-selected="false">Доставка</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                        Лекарственный препарат Отодекса представляет собой комбинированный препарат для лечения
+                        заболеваний уха и содержит в качестве действующих веществ неомицина сульфат и полимиксина В
+                        сульфат, которые относятся к аминогликозидным антибиотикам, и дексаметазона натрия
+                        метасульфобензоат, который относится к группе кортикостероидов. Лечебный эффект препарата
+                        Отодекса обусловлен противовоспалительным действием дексаметазона и антибактериальным действием
+                        неомицина и полимиксина В. Препарат Отодекса применяется для лечения наружного отита (инфекция
+                        кожи слухового прохода) без повреждения барабанной перепонки, а также инфицированной экземы
+                        наружного слухового прохода (воспалительное кожное заболевание).
+                    </div>
+                    <div class="tab-pane" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">2
+                    </div>
+                    <div class="tab-pane" id="instruction" role="tabpanel" aria-labelledby="instruction-tab">3</div>
+                    <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">4</div>
+                    <div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="payment-tab">5</div>
+                    <div class="tab-pane" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">6</div>
+                </div>
+            </div>
+            <div class="row product-sort">
+                <h3>Наличие и цены</h3>
+                <select class="form-select">                    
+                    <option selected>Сначала дешевые</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                <form class="d-flex w-50">                    
+                    <input class="form-control" type="search" aria-label="Search"  placeholder="Введите адрес">                    
+                    <button class="btn btn-search" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
             </div>
 
         </div>
