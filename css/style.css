@@ -79,6 +79,21 @@ header,
 
 .sticky-top .nav-icons {
   font-size: 0.875rem;
+  position: relative;
+}
+
+.nav-icons .btn-cart .cart-quantity{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #6DBF67;
+  color: #FFFFFF;
+  position: absolute;
+  margin-left: 45px;
+  line-height: 27px;
+  top: 0;
+  font-size: 0.875rem;
 }
 
 .sticky-top .me-2 {
@@ -1854,7 +1869,7 @@ iframe {
   margin-top: 20px;
 }
 
-.product-sort a svg{
+.product-sort a svg {
   margin-right: 15px;
   margin-bottom: 5px;
 }
@@ -1888,7 +1903,7 @@ iframe {
 }
 
 .order-steps span:nth-child(2) {
-  margin: 0 50px 0px 33px;
+  margin: 0 57px 0px 33px;
 }
 
 .order-steps span:first-of-type::before,
@@ -1897,7 +1912,7 @@ iframe {
   display: block;
   height: 2px;
   background: rgba(220, 220, 220, 1);
-  width: 165px;
+  width: 168px;
   position: relative;
   top: 16px;
   left: 100px;
@@ -1934,3 +1949,122 @@ iframe {
   border: 0;
   margin: 30px auto;
 }
+
+.order-form h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.order-form .pickup-order, .order-form .courier-order {
+  border: 1px solid rgba(109, 191, 103, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.order-form .courier-order {
+  height: 265px;
+}
+
+.order-form .pickup-order img,
+.order-form .courier-order img {
+  width: 45px;
+  height: 23px;
+}
+
+.order-form .pickup-order .col {
+  margin-bottom: 0;
+}
+
+.order-form .pickup-order span {
+  font-size: 0.75rem;
+
+}
+
+.order-form .pickup-order h5 {
+  margin-bottom: 0;
+}
+
+.order-form .pickup-order p,
+.order-form .courier-order p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 0.9375rem;
+}
+
+.order-form .courier-order .form-group {
+  margin-top: 10px;
+}
+
+.order-form .courier-order .form-group label {
+  font-size: 0.875rem;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.order-form .courier-order .form-group input {
+  border: 1px solid rgba(213, 213, 213, 1);
+  color: rgba(172, 172, 172, 1);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.order-form .courier-order .form-group small {
+  color: rgba(90, 90, 90, 0.75);
+  font-size: 0.625rem;
+  padding-left: 0;
+}
+
+.order-form .courier-order span {
+  display: inline-block;
+  font-size: 0.625rem;
+  line-height: 12.75px;
+  height: 0;
+}
+
+.order-form .delivery-type .order-comment label {
+  padding-left: 0;
+  color: rgba(162, 162, 162, 1);
+  font-size: 0.875rem;
+}
+
+.order-form .btns-block {
+  margin-top: 100px;
+}
+
+.order-form .btns-block-courier  {
+  margin-top: 20px;
+}
+
+.order-form .btns-block .btn, .order-form .btns-block-courier .btn {
+  margin: 10px;
+}
+
+.order-form .btns-block .btn-back, .order-form .btns-block-courier .btn-back{
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  color: rgba(172, 172, 172, 1);
+  background: #FFFFFF;
+}
+
+.order-payment {
+  padding: 20px;
+}
+
+.order-payment .custom-radio {
+  border: 1px solid rgba(109, 191, 103, 0.5);
+  height: 55px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 0 20px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.order-payment .custom-radio img {
+  width: auto;
+  margin: 0 12px;
+}
+
+
+
