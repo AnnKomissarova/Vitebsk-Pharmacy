@@ -1474,6 +1474,10 @@ iframe {
   margin-top: 20px;
 }
 
+.basket-items #product-cards .card-icon a {  
+  color: #B8B8B8;
+}
+
 .basket-items #product-cards .card-icon svg {
   cursor: pointer;
 }
@@ -2091,4 +2095,58 @@ iframe {
 .order-payment .custom-radio img {
   width: auto;
   margin: 0 12px;
+}
+
+.order-payment  label {
+  display:block;
+  margin-bottom:4px;
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom radio button */
+  cursor: pointer;
+}
+/* hide default radio button  */
+.order-payment  label input[type=radio] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opacity: 0;
+  width:0; 
+  height:0;
+}
+/* custom radio button */
+.order-payment  label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:0;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+.order-payment  label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* middle */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color:#fff;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+.order-payment  label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+.order-payment  label input:checked ~ span {
+  background-color: #6DBF67;
+}
+.order-payment  label input:checked ~ span:after {
+  display:block;
 }
