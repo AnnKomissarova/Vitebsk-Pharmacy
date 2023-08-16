@@ -69,6 +69,10 @@ header,
   text-align: center;
 }
 
+.a-btn:hover {
+  color: #FFFFFF;
+}
+
 .sticky-top {
   padding: 20px 0
 }
@@ -1474,7 +1478,7 @@ iframe {
   margin-top: 20px;
 }
 
-.basket-items #product-cards .card-icon a {  
+.basket-items #product-cards .card-icon a {
   color: #B8B8B8;
 }
 
@@ -1953,8 +1957,7 @@ iframe {
   width: 616px;
   height: 562px;
   padding: 30px 0;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 50px;
 }
 
 .order-form .user-data .col-12 {
@@ -2066,12 +2069,16 @@ iframe {
 }
 
 .order-form .btns-block .btn,
-.order-form .btns-block-courier .btn {
+.order-form .btns-block-courier .btn,
+.order-form .btns-block-payment .btn,
+.order-form .btns-block-total .btn {
   margin: 10px;
 }
 
 .order-form .btns-block .btn-back,
-.order-form .btns-block-courier .btn-back {
+.order-form .btns-block-courier .btn-back,
+.order-form .btns-block-payment .btn-back,
+.order-form .btns-block-total .btn-back {
   border: 1px solid rgba(90, 90, 90, 0.5);
   color: rgba(172, 172, 172, 1);
   background: #FFFFFF;
@@ -2097,56 +2104,168 @@ iframe {
   margin: 0 12px;
 }
 
-.order-payment  label {
-  display:block;
-  margin-bottom:4px;
-  position: relative; /* to contain absolute elements */
-  padding-left:30px; /* free space for custom radio button */
+.order-payment label {
+  display: block;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 30px;
   cursor: pointer;
 }
-/* hide default radio button  */
-.order-payment  label input[type=radio] {
-  position: absolute; /* prevent taking any space */
-  /* cross-browser hidingg */
-  opacity: 0;
-  width:0; 
-  height:0;
-}
-/* custom radio button */
-.order-payment  label span {
+
+.order-payment label input[type=radio] {
   position: absolute;
-  /* position to the free space in <label> */
-  top:0;
-  left:0;
-  width:20px; 
-  height:20px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.order-payment label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   background-color: #ddd;
   border-radius: 50%;
-  transition: .3s background-color; /* slight transition */
+  transition: .3s background-color;
 }
-/* the check icon */
-.order-payment  label span:after {
+
+.order-payment label span:after {
   content: "";
   position: absolute;
   display: none;
-  
-  /* middle */
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  background-color:#fff;
-  width:8px;
-  height:8px;
-  border-radius:50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
-.order-payment  label:hover span {
+
+.order-payment label:hover span {
   background-color: #ccc;
 }
 
-/**** Here's the trick ***/
-.order-payment  label input:checked ~ span {
+.order-payment label input:checked~span {
   background-color: #6DBF67;
 }
-.order-payment  label input:checked ~ span:after {
-  display:block;
+
+.order-payment label input:checked~span:after {
+  display: block;
+}
+
+
+.order-form .btns-block-payment {
+  margin-top: 60px;
+}
+
+.order-form .btns-block-total .btn-checkout {
+  background-color: #39B54A;
+}
+
+.order-form .total-order .total-grand {
+  font-weight: 500;
+}
+
+.order-form .total-order .delivery-cost {
+  color: #279136;
+  font-weight: 500;
+}
+
+.order-total {
+  padding: 30px;
+}
+
+.order-form .total-order {
+  border: 2px solid rgba(182, 209, 234, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  height: 250px;
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+.order-form .total-order span {
+  font-weight: 300;
+}
+
+.order-form .total-cost,
+.order-form .total-cost span {
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5A5A5A;
+}
+
+.order-form .total-cost:after {
+  content: '......................................................................................................................................................';
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-form .total-cost span:first-of-type {
+  float: left;
+  margin-right: 10px;
+}
+
+.order-form .total-cost span:last-of-type {
+  float: right;
+  margin-left: 10px;
+}
+
+.order-form .total-check {
+  margin: 20px 30px;
+  font-size: 0.875rem;
+}
+
+.order-form .total-check div:first-child {
+  margin-bottom: 10px;
+  height: 10px;
+}
+
+.order-form .total-check label{
+  font-weight: 300;
+}
+
+.order-form .total-check label span {
+  color: #279136;
+  font-weight: 500;
+}
+
+.ordering-items .step-1, .step-2-pickup, .step-2-courier, .step-3, .step-4  {
+  position: relative;
+}
+
+.ordering-items .step-1 .decor-img:first-of-type::after,
+.ordering-items .step-2-pickup .decor-img:first-of-type::after,
+.ordering-items .step-2-courier .decor-img:first-of-type::after,
+.ordering-items .step-3 .decor-img:first-of-type::after,
+.ordering-items .step-4 .decor-img:first-of-type::after  {
+  content: " ";
+  width: 90px;
+  height: 130px;
+  display: block;
+  background-image: url(../img/bg-cross.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 250px;
+  top: 200px;
+}
+
+.ordering-items .step-1 .decor-img:nth-of-type(2)::after,
+.ordering-items .step-2-pickup .decor-img:nth-of-type(2)::after,
+.ordering-items .step-2-courier .decor-img:nth-of-type(2)::after,
+.ordering-items .step-3 .decor-img:nth-of-type(2)::after,
+.ordering-items .step-4 .decor-img:nth-of-type(2)::after  {
+  content: " ";
+  width: 100px;
+  height: 130px;
+  display: block;
+  background-image: url(../img/bg-line.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 240px;
+  top: 80%;
 }
