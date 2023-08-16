@@ -98,7 +98,7 @@
                     <select class="form-select">
                         <option selected>По названию</option>
                         <option value="1">По МНН</option>
-                      </select>
+                    </select>
                     <button class="btn btn-outline-success btn-search" type="submit"><i
                             class="fas fa-search"></i></button>
                 </form>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="col-3  text-center">
                         <a type="button" class="btn btn-primary btn-cart" href="basket.html">
-                            <span class="cart-quantity">27</span>
+                            <span class="circle-quantity">27</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                                 class="bi bi-cart2" viewBox="0 0 16 16">
                                 <path
@@ -327,9 +327,13 @@
                         <div class="form-group">
                             <small id="promoHelp" class="form-text">Введите ваш промокод для получения скидки</small>
                             <div class="promo-field d-flex">
-                                <input type="text" class="form-control" placeholder="Введите промокод">                            <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                              </svg></button>
+                                <input type="text" class="form-control" placeholder="Введите промокод"> <button
+                                    class="btn btn-outline-success" type="submit"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></button>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Оформить заказ</button>
@@ -337,7 +341,7 @@
                             <img src="img/form-payment-methods.png" alt="Способы оплаты">
                         </div>
                     </form>
-                    <button type="button" class="btn clean-basket">Очистить корзину</button>
+                    <a type="button" class="btn clean-basket a-btn">Очистить корзину</a>
                 </div>
             </div>
         </div>
@@ -369,7 +373,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -456,10 +460,9 @@
                     <div class="col text-center resource-item2">
                         <h4>Личный кабинет</h4>
                         <div class="line"></div>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#loginModal">
+                        <a type="button" class="btn a-btn" data-bs-toggle="modal" data-bs-target="#loginModal">
                             Войти
-                        </button>
+                        </a>
                     </div>
                     <div class="col resource-item3">
                         <h4 class="text-center">Контакты</h4>

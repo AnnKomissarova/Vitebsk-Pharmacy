@@ -58,6 +58,17 @@ header,
   background: var(--main);
 }
 
+.a-btn {
+height: 50px;
+width: 200px;
+background: #6DBF67;
+border-radius: 30px;
+color: #FFFFFF;
+line-height: 35px;
+text-decoration: none;
+text-align: center;
+}
+
 .sticky-top {
   padding: 20px 0
 }
@@ -82,12 +93,12 @@ header,
   position: relative;
 }
 
-.nav-icons .btn-cart .cart-quantity{
+.nav-icons .circle-quantity{
   display: block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #6DBF67;
+  background-color:#A4C6E5;
   color: #FFFFFF;
   position: absolute;
   margin-left: 45px;
@@ -417,9 +428,8 @@ div.scrollup:hover {
   list-style-image: url('../img/check.png');
 }
 
-.resource-item2 button {
+.resource-item2 .a-btn {
   width: 120px;
-  height: 50px;
   border: 1px solid var(--text-1);
   color: var(--text-1);
   background: #5A5A5A;
@@ -427,7 +437,7 @@ div.scrollup:hover {
   font-size: 1.125rem;
 }
 
-.resource-item2 button:hover {
+.resource-item2 .a-btn:hover {
   background: #5a5a5a;
   border: 2px solid var(--text-1);
   color: var(--text-1);
@@ -1314,14 +1324,13 @@ iframe {
 
 .load-more {
   width: 100%;
-  height: 50px;
   color: var(--text-3);
   background: var(--main);
   border: 2px solid var(--text-3);
   font-size: 1.25rem;
-  text-align: center;
-  line-height: 50px;
   border-radius: 40px;
+  display: block;
+  line-height: 40px;
 }
 
 .our-pagination {
@@ -1511,10 +1520,10 @@ iframe {
 .basket-items .clean-basket {
   background-color: rgba(228, 46, 46, 0.05);
   width: 100%;
-  height: 50px;
   border-radius: 40px;
   border: 1px solid rgba(228, 46, 46, 0.25);
   margin-top: 20px;
+  color: #5A5A5A;
 }
 
 .basket-items .clean-basket:hover {
@@ -1633,6 +1642,8 @@ iframe {
   color: #78B6E3;
   font-size: 0.875rem;
   font-weight: 300;
+  background-color: #FFFFFF;
+  line-height: 25px;
 }
 
 .product-items .product-characteristics .all-characteristics:hover {
@@ -1861,6 +1872,10 @@ iframe {
   height: 40px;
   border-radius: 5px;
   font-size: 1.125rem;
+  width: 162px;
+  text-align: center;
+  margin-top: 0;
+  line-height: 25px;
 }
 
 .product-sort a {
