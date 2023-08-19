@@ -293,7 +293,12 @@ h2 {
   padding: 15px;
   height: 200px;
   width: 200px;
-  margin: 0 15px;
+  margin: 0 15px 15px 0;
+}
+
+.history .card a {
+  text-decoration: none;
+  color: #5A5A5A;
 }
 
 .history .card h6 {
@@ -553,6 +558,7 @@ div.scrollup:hover {
 
 .promotions .carousel-indicators {
   left: -460px;
+  bottom: -40px;
 }
 
 .promotions .button {
@@ -770,6 +776,16 @@ footer {
     bottom: 60px;
   }
 
+  .carousel-item img,
+  .chapter-body img {
+    width: 195px;
+  }
+
+  .slider .carousel-inner span,
+  .chapter-body .catalog-items span {
+    width: 195px;
+  }
+
   /* .links-items .col {
     width: 100px;
     height: 80px;
@@ -780,12 +796,20 @@ footer {
 
 @media screen and (max-width: 1200px) {
 
+  .navbar {
+    justify-content: center;
+  }
+
   .navbar>.container-fluid {
     justify-content: space-between;
   }
 
   .sticky-top svg {
     color: var(--main);
+  }
+
+  .sticky-top .form-select {
+    padding-right: 35px;
   }
 
   .nav-icons,
@@ -824,7 +848,7 @@ footer {
   }
 
   .sticky-top .navbar>.container-fluid {
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .promotions-body {
@@ -860,6 +884,10 @@ footer {
     right: 350px;
   }
 
+  .promotions .carousel-indicators {
+    left: -360px;
+  }
+
   div.scrollup {
     bottom: 220px;
   }
@@ -874,6 +902,38 @@ footer {
 
   .subscribe button {
     margin-right: 20px;
+  }
+
+  .carousel-item img,
+  .chapter-body img {
+    width: 145px;
+  }
+
+  .slider .carousel-inner span,
+  .chapter-body .catalog-items span {
+    width: 145px;
+    font-size: 0.875rem;
+  }
+
+  .slider h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner .decor-img:first-of-type::after {
+    width: 120px;
+    height: 120px;
+  }
+
+  .banner .decor-img:nth-of-type(2)::after {
+    width: 130px;
+    height: 130px;
+  }
+
+  .banner .decor-img:nth-of-type(3)::after {
+    width: 90px;
+    height: 90px;
+    right: 200px;
+    bottom: -50px;
   }
 
 }
@@ -892,6 +952,44 @@ footer {
     right: 280px;
     bottom: 220px;
   }
+
+  .promotions p {
+    width: 100%;
+  }
+
+  #carousel-catalog .carousel-item .col {
+    flex: 0 0 0%;
+  }
+
+  #carousel-catalog .carousel-item .row {
+    justify-content: center;
+  }
+
+  .history .card {
+    padding: 0;
+    padding-top: 15px;
+    width: 170px;
+  }
+
+  .promotions .carousel-indicators {
+    left: -260px;
+  }
+
+  .banner .decor-img:first-of-type::after {
+    top: 70px;
+    left: 200px;
+  }
+
+  .banner .decor-img:nth-of-type(2)::after {
+    left: 300px;
+    top: 300px;
+  }
+
+  .banner .decor-img:nth-of-type(3)::after {
+    width: 90px;
+    height: 90px;
+  }
+
 }
 
 @media screen and (max-width: 770px) {
@@ -937,9 +1035,9 @@ footer {
   margin-bottom: 70px;
 }
 
-.chapter-body span {
+/* .chapter-body  span {
   height: 70px;
-}
+} */
 
 .chapter-body .decor-img:first-of-type::after {
   content: " ";
@@ -1629,6 +1727,10 @@ iframe {
   width: 100%;
 }
 
+.product-items .product-img svg {
+  color: #ACACAC;
+}
+
 .product-items .product-img span,
 .product-items .product-characteristics span {
   font-size: 0.75rem;
@@ -2225,7 +2327,7 @@ iframe {
   height: 10px;
 }
 
-.order-form .total-check label{
+.order-form .total-check label {
   font-weight: 300;
 }
 
@@ -2234,7 +2336,11 @@ iframe {
   font-weight: 500;
 }
 
-.ordering-items .step-1, .step-2-pickup, .step-2-courier, .step-3, .step-4  {
+.ordering-items .step-1,
+.step-2-pickup,
+.step-2-courier,
+.step-3,
+.step-4 {
   position: relative;
 }
 
@@ -2242,7 +2348,7 @@ iframe {
 .ordering-items .step-2-pickup .decor-img:first-of-type::after,
 .ordering-items .step-2-courier .decor-img:first-of-type::after,
 .ordering-items .step-3 .decor-img:first-of-type::after,
-.ordering-items .step-4 .decor-img:first-of-type::after  {
+.ordering-items .step-4 .decor-img:first-of-type::after {
   content: " ";
   width: 90px;
   height: 130px;
@@ -2258,7 +2364,7 @@ iframe {
 .ordering-items .step-2-pickup .decor-img:nth-of-type(2)::after,
 .ordering-items .step-2-courier .decor-img:nth-of-type(2)::after,
 .ordering-items .step-3 .decor-img:nth-of-type(2)::after,
-.ordering-items .step-4 .decor-img:nth-of-type(2)::after  {
+.ordering-items .step-4 .decor-img:nth-of-type(2)::after {
   content: " ";
   width: 100px;
   height: 130px;
