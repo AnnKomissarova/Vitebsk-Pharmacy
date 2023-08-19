@@ -74,7 +74,8 @@ header,
 }
 
 .sticky-top {
-  padding: 20px 0
+  padding: 20px 0;
+  top: -2px;
 }
 
 .sticky-top,
@@ -791,6 +792,26 @@ footer {
     height: 80px;
   } */
 
+  footer .decor-img::before {
+    display: none;
+  }
+
+  .footer-number span {
+    font-size: 2rem;
+  }
+
+  .subscribe button {
+    margin-right: 20px;
+  }
+
+  .subscribe form {
+    margin-left: 50px;
+  }
+
+  .footer-number {
+    text-align: center;
+  }
+
 
 }
 
@@ -988,6 +1009,55 @@ footer {
   .banner .decor-img:nth-of-type(3)::after {
     width: 90px;
     height: 90px;
+    right: 10px;
+  }
+
+  .catalog {
+    padding-left: 0;
+    margin-right: 50px;
+  }
+
+  .resource-item2 {
+    order: 1;
+    margin-top: 50px;
+    font-size: 1.25px;
+  }
+
+  .resource-item2 .line {
+    border: 0;
+  }
+
+  .resources div h4 {
+    font-size: 1.25rem;
+  }
+
+  .subscribe input {
+    width: 240px;
+  }
+
+  .subscribe form {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .subscribe button {
+    width: 140px;
+  }
+
+  .subscribe .col-2:first-of-type {
+    width: 22%;
+  }
+
+  .subscribe .col {
+    padding: 0;
+  }
+
+  .footer-number {
+    padding: 0;
+  }
+
+  .agreements .col-2 {
+    width: 25%;
   }
 
 }
@@ -2021,7 +2091,21 @@ iframe {
   margin-left: 5px;
 }
 
+.loader {
+  width: 50px !important;
+  height: 12px !important;
+  background: radial-gradient(circle closest-side, #78B6E3 90%, #0000) 0 0/33% 100% space !important;
+  clip-path: inset(0 100% 0 0);
+  animation: d1 1.5s steps(4) infinite;
+  margin-left: 50px;
+  font-size: 0 !important;
+}
 
+@keyframes d1 {
+  to {
+    clip-path: inset(0 -34% 0 0)
+  }
+}
 
 /* Ordering-page */
 
