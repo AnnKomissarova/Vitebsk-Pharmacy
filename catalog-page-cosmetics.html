@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand col-3" href="index.html"><img src="img/logo.svg"></a>
+                    <a class="navbar-brand col-3" href="index.html"><span></span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -157,7 +157,27 @@
     <section class="mini-delimiter"></section>
     <section class="chapter-body catalog-items">
         <div class="container">
-            <div class="catalog-icons">
+            <div class="catalog-icons">                
+                  <div class="dropdown icons-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                          Категории
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Косметические средства</a></li>
+                      <li><a class="dropdown-item" href="#">Эфирные и косметические масла</a></li>
+                      <li><a class="dropdown-item" href="#">Наборы косметики</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за лицом</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за глазами</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за волосами</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за губами</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за ногами</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за руками</a></li>
+                      <li><a class="dropdown-item" href="#">Уход за телом</a></li>
+                    </ul>
+                  </div>
                 <div class="row icons-items">
                     <div class="col-2">
                         <a href="">
@@ -221,17 +241,24 @@
                     </div>
                 </div>
                 <div class="row search-params justify-content-between">
-                    <div class="row col-10">
+                    <div class="row col-12">
                         <div class="col price-item">
                             <label for="price">Цена</label>
                             <input type="number" list="priceList" id="price" name="price" placeholder="От">
                             <input type="number" list="priceList" id="price" name="price" placeholder="До">
+                            <select id="price">
+                                <option selected>Цена</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
                         </div>
 
                         <div class="col manufacturer-item">
                             <label for="inputManufacturer">Производитель</label>
                             <select id="inputManufacturer">
-                                <option selected>Выберите производителя</option>
+                                <option selected>Производитель</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -240,7 +267,7 @@
                         </div>
 
                         <div class="col sort-item">
-                            <select id="inputOption">
+                            <select id="sort">
                                 <option>С начала алфавита</option>
                                 <option>С конца алфавита</option>
                                 <option selected>Популярные</option>
@@ -248,9 +275,19 @@
                                 <option>Сначала дорогие</option>
                             </select>
                         </div>
+
+                        <div class="col filters-item">
+                            <select id="filters">                                
+                                <option selected disabled>Фильтры</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="col-2 toggle-btns">
+                    <!-- <div class="col-2 toggle-btns">
                         <span id="blocks-btn"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                 fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
                                 <path
@@ -270,13 +307,13 @@
                                 <path fill-rule="evenodd"
                                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                             </svg></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-4 g-4" id="product-cards">
+            <div class="row" id="product-cards">
                 <div class="col">
                     <div class="card h-100">
                         <img src="img/hair-activate.png" class="card-img-top" alt="...">
@@ -459,33 +496,58 @@
                 </ul>
             </div>
         </div>
-
     </section>
 
     <section class="history">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 ">
                     <h2 class="text-center mb-5">Вы смотрели</h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-5 g-4 text-center">
-                <div class="col">
+            <div class="row text-center">
+                <div class="col-sm-4 col-md-3">
                     <div class="card">
-                        <img src="img/1.png" class="card-img-top" alt="...">
+                        <a href="">
+                            <img src="img/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title">Анальгин р-р для инъекций 500мг/мл...</h6>
+                            <h6 class="card-title">Анальгин р-р для инъекций 500мг/мл</h6>
                             <small class="text-muted">7.86 руб./шт</small>
                         </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-4 col-md-3">
                     <div class="card">
+                       <a href="">
                         <img src="img/2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка...</h6>
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
                             <small class="text-muted">3.20 руб./шт</small>
                         </div>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                       <a href="">
+                        <img src="img/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
+                            <small class="text-muted">3.20 руб./шт</small>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                       <a href="">
+                        <img src="img/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
+                            <small class="text-muted">3.20 руб./шт</small>
+                        </div>
+                       </a>
                     </div>
                 </div>
             </div>
@@ -522,10 +584,12 @@
                     </div>
                     <div class="col">
                         <form>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <div class="d-flex flex-sm-row w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">Email</label>
                                 <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-                                <button class="btn btn-primary" type="button">Подписаться</button>
+                                <button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>Подписаться</button>
                             </div>
                         </form>
                     </div>
@@ -642,7 +706,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <img src="img/payment-methods.png" alt="">
                     </div>
                 </div>
             </div>

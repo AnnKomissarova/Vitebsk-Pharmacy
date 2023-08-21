@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand col-3" href="index.html"><img src="img/logo.svg"></a>
+                    <a class="navbar-brand col-3" href="index.html"><span></span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -173,7 +173,7 @@
     <section class="mini-delimiter"></section>
     <section class="chapter-body product-items">
         <div class="container">
-            <div class="row">
+            <div class="row product-info">
                 <div class="col-5 product-img">
                     <div>
                         <img src="img/product-item.png" alt="">
@@ -206,8 +206,7 @@
                             class="discount">-17 %</span>
                         <a type="button" class="btn price a-btn">Наличие и цены</a>
                     </div>
-                    <span>Цена действительна только для интернет-магазина и может отличаться от цен в других
-                        аптеках</span>
+                    <span>Цена действительна только для интернет-магазина и может отличаться от цен в других аптеках</span>
                 </div>
             </div>
             <div class="row product-tabs">
@@ -258,7 +257,7 @@
                         3
                     </div>
                     <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                        <div class="row">
+                        <div class="row reviews">
                             <div class="col-8 reviews-block">
                                 <p>Помогите другим пользователям с выбором - будьте первым, кто поделится своим мнением
                                     об этом товаре</p>
@@ -275,8 +274,8 @@
             </div>
             <div class="row product-sort">
                 <h3>Наличие и цены</h3>
-                <select class="form-select">
-                    <option selected>Сначала дешевые</option>
+                <select class="product-select">
+                    <option selected class="sort-title">Сначала дешевые</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                 </select>
@@ -302,7 +301,9 @@
                                 <td>До: 2025-06-01</td>
                                 <td class="available">1 шт</td>
                                 <td>31 BYN</td>
-                                <td><a type="button" class="btn a-btn add-in-basket loader">В корзину</a></td>
+                                <td><a type="button" class="btn a-btn add-in-basket loader"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg><span>В корзину</span></a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Самовывоз - №3
@@ -314,7 +315,9 @@
                                 <td>До: 2025-06-01</td>
                                 <td class="available">Есть в наличии</td>
                                 <td>31 BYN</td>
-                                <td><a type="button" class="btn a-btn add-in-basket">В корзину</a></td>
+                                <td><a type="button" class="btn a-btn add-in-basket"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg><span>В корзину</span></a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Самовывоз - №3
@@ -326,7 +329,9 @@
                                 <td>До: 2025-06-01</td>
                                 <td class="available">Есть в наличии</td>
                                 <td>31 BYN</td>
-                                <td><a type="button" class="btn a-btn add-in-basket">В корзину</a></td>
+                                <td><a type="button" class="btn a-btn add-in-basket"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg><span>В корзину</span></a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Самовывоз - №3
@@ -338,7 +343,9 @@
                                 <td>До: 2025-06-01</td>
                                 <td class="available">Есть в наличии</td>
                                 <td>31 BYN</td>
-                                <td><a type="button" class="btn a-btn add-in-basket">В корзину</a></td>
+                                <td><a type="button" class="btn a-btn add-in-basket"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg><span>В корзину</span></a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Самовывоз - №3
@@ -350,7 +357,9 @@
                                 <td>До: 2025-06-01</td>
                                 <td class="available">Есть в наличии</td>
                                 <td>31 BYN</td>
-                                <td><a type="button" class="btn a-btn add-in-basket">В корзину</a></td>
+                                <td><a type="button" class="btn a-btn add-in-basket"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg><span>В корзину</span></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -375,23 +384,48 @@
             <div class="row text-center">
                 <div class="col-sm-4 col-md-3">
                     <div class="card">
-                        <img src="img/1.png" class="card-img-top" alt="...">
+                        <a href="">
+                            <img src="img/1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title">Анальгин р-р для инъекций 500мг/мл...</h6>
+                            <h6 class="card-title">Анальгин р-р для инъекций 500мг/мл</h6>
                             <small class="text-muted">7.86 руб./шт</small>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="card">
+                       <a href="">
                         <img src="img/2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка...</h6>
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
                             <small class="text-muted">3.20 руб./шт</small>
                         </div>
+                       </a>
                     </div>
                 </div>
-
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                       <a href="">
+                        <img src="img/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
+                            <small class="text-muted">3.20 руб./шт</small>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card">
+                       <a href="">
+                        <img src="img/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Цитрамон-Боримед таблетки упаковка</h6>
+                            <small class="text-muted">3.20 руб./шт</small>
+                        </div>
+                       </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -426,10 +460,12 @@
                     </div>
                     <div class="col">
                         <form>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <div class="d-flex flex-sm-row w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">Email</label>
                                 <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-                                <button class="btn btn-primary" type="button">Подписаться</button>
+                                <button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>Подписаться</button>
                             </div>
                         </form>
                     </div>
@@ -546,7 +582,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <img src="img/payment-methods.png" alt="">
                     </div>
                 </div>
             </div>
@@ -567,6 +602,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
