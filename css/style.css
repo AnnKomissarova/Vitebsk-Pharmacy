@@ -39,6 +39,11 @@
   padding: 0;
 }
 
+.top-icons .btn-primary:hover {
+  background-color: transparent;
+  border-color: none;
+}
+
 *:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -769,6 +774,109 @@ footer {
 .links-items img {
   width: 100%;
 }
+
+.modal {
+  top: 10%;
+}
+
+.modal-backdrop{
+  backdrop-filter: blur(10px);
+  background-color: #01223770;
+}
+
+.modal-backdrop.in{
+  opacity: 1 !important;
+}
+
+.modal-content {
+  height: 540px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px; 
+}
+
+.modal-header {
+  justify-content: center;
+  align-items: flex-start;
+  height: 70px;
+  position: relative;
+  border-bottom: 0;
+}
+
+.modal-header h5 {
+  font-size: 1.5rem;
+}
+
+.modal-header .btn-close {
+  margin-left: 0;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
+.modal-content .form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content .form-check a {
+  text-decoration: none;
+  color: #39B54A;
+  text-align: end;
+}
+
+.modal-content .form-check-input {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.modal-content .form-check-label {
+  margin-top: 3px;
+}
+
+.modal-content .password-control {
+	position: absolute;
+	top: 145px;
+	right: 25px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/view.svg) 0 0 no-repeat;
+}
+
+.modal-content .password-control.view {
+	background: url(../img/no-view.svg) 0 0 no-repeat;
+}
+
+.modal-footer {
+  flex-direction: column;
+  justify-content: center;
+  border-top: 0;
+}
+
+.modal-footer .btn {
+  width: 100%;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+
+.modal-footer .btn-primary {
+  background: #39B54A;
+}
+
+.modal-footer .btn-secondary {
+  border: 1px solid rgba(57, 181, 74, 1);
+  color: #39B54A;
+  background: #FFFFFF;
+}
+
+.modal-footer>* {
+  margin: .5rem;
+}
+
 
 @media screen and (max-width: 1600px) {
 
@@ -1851,6 +1959,20 @@ footer {
   .promotions .carousel-indicators {
     bottom: -60px;
   }
+
+  .modal-header h5 {
+    font-size: 1.25rem;
+  }
+
+  .modal-content .form-check-label {
+    margin-top: 6px;
+    font-size: 0.875rem;
+}
+
+.modal-content .form-check a {
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
 }
 
 @media screen and (max-width: 425px) {
@@ -1881,6 +2003,13 @@ footer {
   .navbar-light .navbar-toggler {
     left: 150px;
   }
+
+  .modal-content .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+    margin-top: 5px;
+}
 }
 
 @media screen and (max-width: 385px) {
@@ -1946,6 +2075,18 @@ footer {
     width: 140px;
   }
 
+}
+
+
+@media screen and (max-width: 356px) {
+  
+  .modal-content .form-check a,  .modal-content .form-check-label {
+    font-size: 0.7rem;
+  }
+
+  .modal-header h5 {
+    font-size: 1rem;
+}
 }
 
 @media screen and (max-width: 351px) {

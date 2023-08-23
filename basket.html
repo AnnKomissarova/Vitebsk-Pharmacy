@@ -414,7 +414,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="mb-3">
+                            <label for="user-name" class="form-label">Логин*</label>
+                            <input type="text" class="form-control" id="user-name" value="" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-password" class="form-label">Пароль*</label>
+                            <input type="password" class="form-control" id="modal-password">
+                            <a href="#" class="password-control" id="show-password"></a>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <div>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                            </div>
+                            <a href="">Забыли пароль?</a>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Войти</button>
