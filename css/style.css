@@ -160,6 +160,43 @@ header,
   padding-left: 50px;
 }
 
+.cookie {
+  width: 100%;
+  max-width: 320px;
+  background: #fff;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 1rem;
+  border-radius: 15px;
+  z-index: 9999999;
+  transition: 0.3s;
+  box-shadow: 0px -8px 23px 0px rgba(34, 60, 80, 0.2);
+}
+
+.cookie p {
+  font-weight: 300;
+}
+
+.btns-cookies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns-cookies a {
+  height: 40px;
+  width: 130px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.btns-cookies .reject {
+  border: 1px solid rgba(57, 181, 74, 1);
+  color: #39B54A;
+  background: #FFFFFF;
+}
+
 footer {
   background: var(--footer);
 }
@@ -183,6 +220,12 @@ footer {
 
 .top-number span {
   font-size: 2rem;
+}
+
+.top-number a span {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 15px;
 }
 
 .top-number .call {
@@ -775,16 +818,30 @@ footer {
   width: 100%;
 }
 
+.call-modal .modal-content {
+  height: 460px;
+}
+
+.call-modal .modal-content .form-check {
+  display: inline-block;
+}
+
+.call-modal .form-check label {
+  display: contents;
+  font-size: 0.9rem;
+}
+
+
 .modal {
   top: 10%;
 }
 
-.modal-backdrop{
+.modal-backdrop {
   backdrop-filter: blur(10px);
   background-color: #01223770;
 }
 
-.modal-backdrop.in{
+.modal-backdrop.in {
   opacity: 1 !important;
 }
 
@@ -792,7 +849,7 @@ footer {
   height: 540px;
   width: 100%;
   border-radius: 20px;
-  padding: 30px; 
+  padding: 30px;
 }
 
 .modal-header {
@@ -838,17 +895,17 @@ footer {
 }
 
 .modal-content .password-control {
-	position: absolute;
-	top: 145px;
-	right: 25px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	background: url(../img/view.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 145px;
+  right: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/view.svg) 0 0 no-repeat;
 }
 
 .modal-content .password-control.view {
-	background: url(../img/no-view.svg) 0 0 no-repeat;
+  background: url(../img/no-view.svg) 0 0 no-repeat;
 }
 
 .modal-footer {
@@ -857,14 +914,27 @@ footer {
   border-top: 0;
 }
 
-.modal-footer .btn {
+.reg-btn {
+  color: white;
+  margin-top: 40px;
+}
+
+.reg-btn:hover {
+  color: white;
+}
+
+.modal-footer .btn, .reg-btn  {
   width: 100%;
   font-size: 1.25rem;
   border-radius: 10px;
 }
 
-.modal-footer .btn-primary {
+.modal-footer .btn-primary, .reg-btn {
   background: #39B54A;
+}
+
+.modal-footer .btn-primary:hover, .reg-btn:hover {
+  box-shadow: inset 0 0 0 23px #279136;
 }
 
 .modal-footer .btn-secondary {
@@ -1741,6 +1811,11 @@ footer {
     margin-top: 20px;
   }
 
+  .top-number a span {
+    font-size: 1rem;
+    top: 5px;
+  }
+
   .navbar-light .navbar-toggler {
     top: 5px;
   }
@@ -1926,6 +2001,15 @@ footer {
   }
 
   .top-icons .btn {
+    padding: 5px;
+  }
+
+  .top-number a span {
+    right: 20px;
+    top: 3px;
+  }
+
+  .top-icons .btn {
     width: 45px;
   }
 
@@ -1967,12 +2051,12 @@ footer {
   .modal-content .form-check-label {
     margin-top: 6px;
     font-size: 0.875rem;
-}
+  }
 
-.modal-content .form-check a {
-  font-size: 0.875rem;
-  margin-top: 5px;
-}
+  .modal-content .form-check a {
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2009,7 +2093,11 @@ footer {
     height: 20px;
     margin-right: 0;
     margin-top: 5px;
-}
+  }
+
+  .call-modal .form-check label {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 385px) {
@@ -2079,14 +2167,15 @@ footer {
 
 
 @media screen and (max-width: 356px) {
-  
-  .modal-content .form-check a,  .modal-content .form-check-label {
+
+  .modal-content .form-check a,
+  .modal-content .form-check-label {
     font-size: 0.7rem;
   }
 
   .modal-header h5 {
     font-size: 1rem;
-}
+  }
 }
 
 @media screen and (max-width: 351px) {
@@ -4913,3 +5002,12 @@ iframe {
   right: 240px;
   top: 80%;
 }
+
+/* Registration */
+
+.registration-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+

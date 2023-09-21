@@ -54,7 +54,8 @@
                                 <i class="fa-solid fa-phone fa-2x"></i>
                                 <span>169</span>
                             </div>
-                            <div class="col call"><a class="nav-link" href="" role="button">Заказать звонок</a></div>
+                            <div class="col call"><a class="nav-link" href="" role="button" data-bs-toggle="modal"
+                                data-bs-target="#callModal">Заказать звонок</a></div>
 
                             <div class="col top-icons justify-content-end align-items-center">
                                 <a type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal"
@@ -563,11 +564,46 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Войти</button>
-                    <button type="button" class="btn btn-secondary">Регистрация</button>
+                    <a href="registration.html" class="btn a-btn btn-secondary">Регистрация</a>
                 </div>
             </div>
         </div>
     </div>
+
+      <!-- Book a call -->
+      <div class="modal fade call-modal" id="callModal" tabindex="-1" aria-labelledby="callModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="callModalLabel"data-bs-toggle="modal"
+                  data-bs-target="#callModal">Заказать звонок</h5>                 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="user-name" class="form-label">Ваше имя*</label>
+                          <input type="text" class="form-control" id="user-name" value="" required="">
+                      </div>
+                      <div class="mb-3">
+                          <label for="modal-password" class="form-label">Телефон*</label>
+                          <input type="password" class="form-control" id="modal-password">
+                      </div>
+                      <div class="mb-3 form-check">
+                          <div>
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Я согласен на <a href="politika_v_otnoshenii_obrabotki_personalnyh_dannyh.pdf">обработку персональных данных</a> *</label>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <footer>
         <div class="decor-img"></div>
